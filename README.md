@@ -2,10 +2,21 @@
 
 A futuristic flight-deck HUD and telemetry overlay for [pi](https://pi.dev).
 
+[![npm version](https://img.shields.io/npm/v/pi-cockpit-hud?color=d9b3ff&labelColor=1b1526)](https://www.npmjs.com/package/pi-cockpit-hud)
+[![npm downloads](https://img.shields.io/npm/dm/pi-cockpit-hud?color=8fd6b4&labelColor=1b1526)](https://www.npmjs.com/package/pi-cockpit-hud)
+[![license](https://img.shields.io/npm/l/pi-cockpit-hud?color=9fb0c4&labelColor=1b1526)](LICENSE)
+[![pi package](https://img.shields.io/badge/pi-package-d9b3ff?labelColor=1b1526)](https://pi.dev/packages/pi-cockpit-hud)
+
+![π Cockpit HUD above the editor and the /cockpit flight deck](https://raw.githubusercontent.com/steelburn/pi-cockpit-hud/main/docs/preview.png)
+
 Cockpit turns the session into an instrument panel: model and thinking state,
 context pressure, token flux, cost, throughput sparklines, live tool execution,
 and a scrolling flight log. It is theme-aware, keyboard driven, and has no
 runtime dependencies beyond pi's host packages.
+
+If you have ever wondered *how close to compaction you are*, *what that turn
+actually cost*, or *which tool is eating the clock*, that information is on
+screen instead of in a `/status` you have to remember to run.
 
 ```text
 ╭─ π COCKPIT ───────────────────────────────────────────── ◉ NOMINAL ─╮
@@ -17,15 +28,17 @@ runtime dependencies beyond pi's host packages.
 
 ## Install
 
-From npm:
+Requires pi 1.x. Nothing is installed beyond the extension itself — pi supplies
+the host packages.
 
 ```bash
 pi install npm:pi-cockpit-hud
 ```
 
-From this directory:
+Pinned from git, or straight from a checkout:
 
 ```bash
+pi install git:github.com/steelburn/pi-cockpit-hud@v0.1.2
 pi install "$(pwd)"
 ```
 

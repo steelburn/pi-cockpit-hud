@@ -1,14 +1,19 @@
 {
   "name": "pi-cockpit-hud",
-  "version": "0.1.1",
-  "description": "A futuristic flight-deck HUD and telemetry overlay for the pi coding agent.",
+  "version": "0.1.2",
+  "description": "Flight-deck HUD and telemetry deck for pi: live context pressure, token throughput, cost and tool activity, mounted above the editor.",
   "type": "module",
   "keywords": [
     "pi-package",
     "pi-extension",
+    "pi",
     "cockpit",
     "hud",
-    "telemetry"
+    "telemetry",
+    "tui",
+    "observability",
+    "context-usage",
+    "tokens"
   ],
   "license": "MIT",
   "files": [
@@ -19,7 +24,8 @@
   "pi": {
     "extensions": [
       "./extensions/cockpit/index.ts"
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/steelburn/pi-cockpit-hud/main/docs/preview.png"
   },
   "peerDependencies": {
     "@earendil-works/pi-agent-core": "*",
@@ -40,5 +46,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steelburn/pi-cockpit-hud.git"
+  },
+  "homepage": "https://github.com/steelburn/pi-cockpit-hud#readme",
+  "bugs": {
+    "url": "https://github.com/steelburn/pi-cockpit-hud/issues"
   }
 }
