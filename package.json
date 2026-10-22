@@ -1,6 +1,6 @@
 {
   "name": "pi-cockpit-hud",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A futuristic flight-deck HUD and telemetry overlay for the pi coding agent.",
   "type": "module",
   "keywords": [
@@ -36,5 +36,9 @@
   "devDependencies": {
     "@types/node": "^22.19.0",
     "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelburn/pi-cockpit-hud.git"
   }
 }
